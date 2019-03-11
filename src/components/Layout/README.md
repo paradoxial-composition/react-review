@@ -12,5 +12,5 @@ Layout component that holds child components // main section
 
 | Name | Description |
 |----|----|
-| [DepNameA] | description of [DepNameA] |
-| [DepNameB] | description of [DepNameB] |
+| Toolbar | Component for the header of the main page |
+| SideMenu | Component for the side menu of the main page |

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Toolbar.css';
+import LoginInfo from '../LoginInfo/LoginInfo';
 import { Input } from 'antd';
 import logo from '../../assets/innoveos.ico';
 
@@ -20,7 +21,9 @@ const toolbar = props => (
     />
                 </div>
                 
-                <div className="toolbar_login-info">Login Info</div>
+                <div className="toolbar_login-info">
+                    <LoginInfo />
+                </div>
             </nav>
         </header>
 );
