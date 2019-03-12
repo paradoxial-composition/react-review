@@ -1,19 +1,24 @@
 import React from 'react';
 
-import Aux from '../../hoc/Aux';
 import Toolbar from '../Toolbar/Toolbar';
+import SideMenu from '../SideMenu';
+import LayoutTabs from '../LayoutTabs';
 
 class Layout extends React.Component {
   
 
   render() {
     return (
-      <Aux>
+      <div>
         <Toolbar />
         <main style={{marginTop: '64px'}}>
-          <p>Layout Content</p>
+          <div style={{display: 'flex'}}>
+            <SideMenu />
+            <LayoutTabs />
+          </div>
+          
         </main>
-      </Aux>
+      </div>
     );
   }
 }

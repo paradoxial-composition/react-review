@@ -1,0 +1,6 @@
+{
+    "name": "LayoutTabs",
+    "main": "./LayoutTabs.js",
+    "version": "0.1.0",
+    "description": "Containers for contant"
+}
