@@ -1,6 +1,9 @@
 import React from 'react';
 import { Tabs } from 'antd';
 
+import UserTab from '../UserTab';
+import DepartmentTab from '../DepartmentTab';
+
 const TabPane = Tabs.TabPane;
 
 function callback(key) {
@@ -9,9 +12,8 @@ function callback(key) {
 
 const LayoutTabs = props => (
     <Tabs defaultActiveKey="1" onChange={callback}>
-    <TabPane tab="Tab 1" key="1">Content of Tab Pane 1</TabPane>
-    <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
-    <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
+    <TabPane tab="Departments" key="1"><DepartmentTab /></TabPane>
+    <TabPane tab="Users" key="2"><UserTab /></TabPane>
   </Tabs>
 );
 
