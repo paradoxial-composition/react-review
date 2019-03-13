@@ -1,5 +1,5 @@
 # UserManagement
-User Data Grid // main section
+User Data Container // main section
 
 ## Props
 
