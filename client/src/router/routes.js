@@ -1,6 +1,7 @@
 import HomePage from '../components/HomePage';
 import LoginPage from '../components/Login';
 import WelcomePage from '../components/Layout';
+import MakePass from '../components/MakePassword';
 
 export const routes = [
     {
@@ -17,6 +18,11 @@ export const routes = [
         exact: false,
         path: '/welcome',
         component: WelcomePage
+    },
+    {
+        exact: false,
+        path: '/makePassword',
+        component: MakePass
     }
 ];
 

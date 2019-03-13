@@ -27,6 +27,7 @@ class LayoutTabs extends React.Component {
             //<div> <GE_Parameters /></div>
             <div> <UserManagement /></div>
             //<div> <GE_Generate /></div>
+            //<div></div>
         );
 };
 }

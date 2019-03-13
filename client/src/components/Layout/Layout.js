@@ -4,6 +4,9 @@ import Toolbar from '../Toolbar/Toolbar';
 import SideMenu from '../SideMenu';
 import LayoutContent from '../LayoutContent';
 
+import RouterView from './router';
+import { BrowserRouter } from 'react-router-dom';
+
 class Layout extends React.Component {
   
   constructor() {
@@ -23,6 +26,9 @@ class Layout extends React.Component {
           <div style={{display: 'flex'}}>
             <SideMenu data={this.state.option}/>
             <LayoutContent data={this.state.option}/>
+            {/* <BrowserRouter>
+                <RouterView></RouterView>
+            </BrowserRouter> */}
           </div>
           
         </main>
