@@ -85,13 +85,13 @@ app.post('/welcome/addUser', (req, res) => {
 
 //************************************************** */
 
-app.patch('/validatePassword/:id', (req, res) => {
+app.post('/validatePassword/', (req, res) => {
   
-  const id = parseInt(req.params.id, 10);
-  const pass = parseInt(req.body.password, 10);
+  const id = parseInt(req.body.id, 10);
+  const pass = req.body.password;
 
-  console.log("YO !!  -- " + pass);
-
+  //console.log("YO !!  -- " + req.body);
+  console.log("app.js Testing !! " + pass + " // " + id);
   db.map((todo) => {
 
     if (todo.id === id) {
